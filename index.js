@@ -4,9 +4,11 @@ const PORT = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) =>{
     
+    console.log(req.url);
+
     if(req.url === '/') {
         res.writeHead(200,{'Content-Type':'text/html'});
-        res.end('<h1>HomePage</h1>','utf8');       
+        res.end('<h1>Home Page</h1>','utf8');       
     }
     else{
         res.writeHead(404,{'Content-Type':'text/html'});

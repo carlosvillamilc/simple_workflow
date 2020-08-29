@@ -10,7 +10,7 @@ const server = http.createServer((req, res) =>{
     }
     else if(req.url === '/about') {
         res.writeHead(200,{'Content-Type':'text/html'});
-        res.end('<h1>About</h1>','utf8');       
+        res.end('<h1>About Page</h1>','utf8');       
     }
     else{
         res.writeHead(404,{'Content-Type':'text/html'});

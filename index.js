@@ -8,6 +8,10 @@ const server = http.createServer((req, res) =>{
         res.writeHead(200,{'Content-Type':'text/html'});
         res.end('<h1>HomePage</h1>','utf8');       
     }
+    else if(req.url === '/about') {
+        res.writeHead(200,{'Content-Type':'text/html'});
+        res.end('<h1>About</h1>','utf8');       
+    }
     else{
         res.writeHead(404,{'Content-Type':'text/html'});
         res.end('<h1>Not Found</h1>','utf8');       
